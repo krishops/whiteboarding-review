@@ -1,0 +1,33 @@
+// check uniqueness
+// are all elements in a string unique
+// NO ARRAYS OR ARRAY METHODS
+// return boolean
+
+// input: "hello"
+// output: false
+// input: "copyright"
+// output: true
+
+function uniqueElement(str) {
+	for (let i = 0; i < str.length; i++) {
+  	for (let j = i + 1; j < str.length; j++) {
+    	if ( i!=j && (str[i] == str[j])) {
+      	return false
+      }
+		}      
+	}  return true  
+}
+
+function uniqueElement(str) {
+	let newString = str.toLowerCase();
+	for (let i = 0; i < newString.length; i++) {
+  	for (let j = 0; j < newString.length; j++) {
+    	if ( i!=j && (newString[i] == newString[j])) {
+      	return false
+      }
+		}      
+	}  return true    
+}
+
+input: string
+output: boolean
